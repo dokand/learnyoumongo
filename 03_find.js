@@ -9,9 +9,9 @@ MongoClient.connect(url, function(err, db) {
 		"age": {
 			$gt: +age
 		}
-	}).toArray(function(err, docs) {
+	}).toArray(function(err, parrot) {
 		if (err) throw err;
-		console.log(docs);
+		console.log(parrot);
 		db.close();
 	});
 });
